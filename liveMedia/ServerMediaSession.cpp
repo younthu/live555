@@ -22,7 +22,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Implementation
 
 #include "ServerMediaSession.hh"
-#include <GroupsockHelper.hh>
+#include "GroupsockHelper.hh"
 #include <math.h>
 #if defined(__WIN32__) || defined(_WIN32) || defined(_QNX4)
 #define snprintf _snprintf

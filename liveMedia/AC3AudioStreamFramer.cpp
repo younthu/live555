@@ -20,7 +20,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 
 #include "AC3AudioStreamFramer.hh"
 #include "StreamParser.hh"
-#include <GroupsockHelper.hh>
+#include "GroupsockHelper.hh"
 
 ////////// AC3AudioStreamParser definition //////////
 

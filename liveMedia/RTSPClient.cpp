@@ -22,7 +22,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #include "RTSPCommon.hh"
 #include "Base64.hh"
 #include "Locale.hh"
-#include <GroupsockHelper.hh>
+#include "GroupsockHelper.hh"
 #include "ourMD5.hh"
 
 ////////// RTSPClient implementation //////////

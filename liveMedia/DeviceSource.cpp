@@ -22,7 +22,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Implementation
 
 #include "DeviceSource.hh"
-#include <GroupsockHelper.hh> // for "gettimeofday()"
+#include "GroupsockHelper.hh" // for "gettimeofday()"
 
 DeviceSource*
 DeviceSource::createNew(UsageEnvironment& env,

@@ -26,7 +26,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #endif
 
 #ifndef _MEDIA_HH
-#include <Media.hh> // includes some definitions perhaps needed for Borland compilers?
+#include "Media.hh" // includes some definitions perhaps needed for Borland compilers?
 #endif
 
 #if defined(__WIN32__) || defined(_WIN32) || defined(_QNX4)

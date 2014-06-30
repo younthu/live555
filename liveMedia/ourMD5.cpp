@@ -20,7 +20,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Implementation
 
 #include "ourMD5.hh"
-#include <NetCommon.h> // for u_int32_t, u_int64_t
+#include "NetCommon.h" // for u_int32_t, u_int64_t
 #include <string.h>
 
 #define DIGEST_SIZE_IN_BYTES 16

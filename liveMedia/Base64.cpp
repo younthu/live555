@@ -19,7 +19,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // implementation
 
 #include "Base64.hh"
-#include <strDup.hh>
+#include "strDup.hh"
 #include <string.h>
 
 static char base64DecodeTable[256];

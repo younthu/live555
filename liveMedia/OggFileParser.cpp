@@ -20,7 +20,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 
 #include "OggFileParser.hh"
 #include "OggDemuxedTrack.hh"
-#include <GroupsockHelper.hh> // for "gettimeofday()
+#include "GroupsockHelper.hh" // for "gettimeofday()
 
 PacketSizeTable::PacketSizeTable(unsigned number_page_segments)
   : numCompletedPackets(0), totSizes(0), nextPacketNumToDeliver(0),

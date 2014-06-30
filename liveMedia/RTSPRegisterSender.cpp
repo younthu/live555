@@ -19,7 +19,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 // Implementation
 
 #include "RTSPRegisterSender.hh"
-#include <GroupsockHelper.hh> // for MAKE_SOCKADDR_IN
+#include "GroupsockHelper.hh" // for MAKE_SOCKADDR_IN
 
 RTSPRegisterSender* RTSPRegisterSender
 ::createNew(UsageEnvironment& env,

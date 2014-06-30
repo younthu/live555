@@ -23,7 +23,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #include "H263plusVideoStreamParser.hh"
 
 #include <string.h>
-#include <GroupsockHelper.hh>
+#include "GroupsockHelper.hh"
 
 
 ///////////////////////////////////////////////////////////////////////////////

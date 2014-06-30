@@ -24,7 +24,7 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 #include "HashTable.hh"
 #endif
 #ifndef _NET_COMMON_H
-#include <NetCommon.h> // to ensure that "uintptr_t" is defined
+#include "NetCommon.h" // to ensure that "uintptr_t" is defined
 #endif
 
 // A simple hash table implementation, inspired by the hash table
