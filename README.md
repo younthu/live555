@@ -1,33 +1,12 @@
-# Build Instructions
+###  [中文](https://github.com/younthu/live555/edit/master/README_cn.md)
 
-For example:
+I forked repository from [hackeron/live555](https://github.com/hackeron/live555), a [live555MediaStream](http://www.live555.com/liveMedia/public/)source mirror,and added xcode 5 project support。
 
-```bash
-./genMakefiles linux
-make -j4
-```
+##### Now, you can clone, build and debug liveMediaServer with xcode.
 
-Replace "linux" with your platform, e.g. avr32-linux, cygwin, freebsd, iphoneos, linux, linux-64bit, macosx, openbsd, solaris-64bit, etc (see config.PLATFORM files)
+<br><br>
 
-You will find various executables:
+更新历史：
 
- * ./testProgs - contain various programs such as testRTSPClient to receive an RTSP stream
- * ./proxyServer/live555ProxyServer - a great RTSP proxy server
- * ./mediaServer/live555MediaServer - an RTSP media server for serving static files over RTSP
+* 2014.06.30，forked [hackeron/live555](https://github.com/hackeron/live555)。<br>建立live555.xcodeproj, 通过手动修改尖括号引用文件为双引号引用，live555 stream server通过编译，正常运行。修改提交至xcode5分支。
 
-# Changes to Master
-
-See modifications.patch to see exactly what was changed compared to vanilla.
-
-### Buffer sizes
-
-increaseReceiveBufferTo is increased to 2,000,000 bytes (same as VLC default) and
-OutPacketBuffer::maxSize is increased 5 fold to 500000 in the ProxyServer. These
-2 changes make live555 work a hell of a lot better out of box.
-
-### -p option for proxyServer - allows specifying a listening port on the command line
- 
-This was rejected from the mailing list, but often RTSPProxy fails to run on
-more than a few cameras with bad corruption, frames seeking back and forth and
-many other adverse side effects. Being able to run multiple instances listening
-on different ports is crucial.
