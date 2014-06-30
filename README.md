@@ -6,7 +6,10 @@ I forked repository from [hackeron/live555](https://github.com/hackeron/live555)
 
 <br><br>
 
-更新历史：
+Update History：
 
-* 2014.06.30，forked [hackeron/live555](https://github.com/hackeron/live555)。<br>建立live555.xcodeproj, 通过手动修改尖括号引用文件为双引号引用，live555 stream server通过编译，正常运行。修改提交至xcode5分支。
+* 2014.06.30，forked [hackeron/live555](https://github.com/hackeron/live555)。<br>Created live555.xcodeproj, and compiled source code by replacing all those angled include with quoted include.
+<br> fixed a compile error by updating definition of SOCKLEN_T from `int` to `unsigned int`。
+<br> Changes are submitted to branch `xcode5`
+* 
 
